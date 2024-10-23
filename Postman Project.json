@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "b49c96a5-9a69-42f0-92f2-00e4899e0f77",
+		"name": "Postman Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32450984"
+	},
+	"item": [
+		{
+			"name": "Post Course",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonfile=pm.response.json()\r",
+							"var courseid=jsonfile.id\r",
+							"pm.environment.set(\"Course\", courseid);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Appuim Course\",\r\n    \"Description\": \"Learn Appuim with RestAssured and Postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/courses/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"courses",
+						""
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Cypress Course",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRequest",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Check if the json file have \", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.title).to.eql(\"Appuim Course\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/courses/{{Course}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"courses",
+						"{{Course}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUpdate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Java for Testers\",\r\n    \"Description\": \"Introduction to Java for QA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/courses/{{Course}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"courses",
+						"{{Course}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCourse",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Appuim Course\",\r\n    \"Description\": \"Learn Appuim with RestAssured and Postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/courses/{{Course}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"courses",
+						"{{Course}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllCourses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/courses",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

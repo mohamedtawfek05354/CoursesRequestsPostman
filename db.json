@@ -1,0 +1,153 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "title": "Postman Course",
+      "Description": "Full Postman Course from zero"
+    },
+    {
+      "id": "2",
+      "title": "Selenium Course",
+      "Description": "Full Selenium Course from zero"
+    },
+    {
+      "id": "3",
+      "title": "JMeter Course",
+      "Description": "Complete guide to performance testing using JMeter"
+    },
+    {
+      "id": "4",
+      "title": "API Automation Course",
+      "Description": "Learn API automation with RestAssured and Postman"
+    },
+    {
+      "id": "5",
+      "title": "Docker for Testers",
+      "Description": "Introduction to containerization and Docker for QA"
+    },
+    {
+      "id": "6",
+      "title": "CI/CD with Jenkins",
+      "Description": "Continuous Integration and Continuous Deployment with Jenkins"
+    },
+    {
+      "title": "Java for Testers",
+      "Description": "Introduction to Java for QA",
+      "id": "1277"
+    },
+    {
+      "id": "fda6",
+      "title": "Jenkis Course",
+      "Description": "Learn Appuim with RestAssured and Postman"
+    },
+    {
+      "id": "f744",
+      "title": "Appuim Course",
+      "Description": "Learn Appuim with RestAssured and Postman"
+    },
+    {
+      "id": "9e40",
+      "title": "Appuim Course",
+      "Description": "Learn Appuim with RestAssured and Postman"
+    },
+    {
+      "id": "76fc",
+      "title": "Appuim Course",
+      "Description": "Learn Appuim with RestAssured and Postman"
+    },
+    {
+      "id": "aa4d",
+      "title": "Appuim Course",
+      "Description": "Learn Appuim with RestAssured and Postman"
+    },
+    {
+      "id": "c4fb",
+      "title": "Appuim Course",
+      "Description": "Learn Appuim with RestAssured and Postman"
+    },
+    {
+      "id": "9a5a",
+      "title": "Appuim Course",
+      "Description": "Learn Appuim with RestAssured and Postman"
+    },
+    {
+      "id": "a110",
+      "title": "Appuim Course",
+      "Description": "Learn Appuim with RestAssured and Postman"
+    }
+  ],
+  "instructors": [
+    {
+      "name": "Mohamed Tawfeek",
+      "specialty": "API Testing",
+      "experience": "2 years",
+      "id": "f34d"
+    },
+    {
+      "instructorId": 2,
+      "name": "Jane Smith",
+      "specialty": "Automation Testing",
+      "experience": "8 years",
+      "id": "a2f4"
+    },
+    {
+      "instructorId": 3,
+      "name": "Alex Johnson",
+      "specialty": "Performance Testing",
+      "experience": "7 years",
+      "id": "6132"
+    },
+    {
+      "instructorId": 4,
+      "name": "Emily Davis",
+      "specialty": "DevOps and CI/CD",
+      "experience": "5 years",
+      "id": "27f4"
+    },
+    {
+      "instructorId": 5,
+      "name": "Michael Brown",
+      "specialty": "Containerization and Docker",
+      "experience": "6 years",
+      "id": "9eda"
+    }
+  ],
+  "reviews": [
+    {
+      "reviewId": 1,
+      "courseId": 1,
+      "rating": 5,
+      "comment": "Excellent Postman course, very thorough and detailed!",
+      "id": "20ff"
+    },
+    {
+      "reviewId": 2,
+      "courseId": 2,
+      "rating": 4,
+      "comment": "Great Selenium course, but could use more advanced examples.",
+      "id": "4a6f"
+    },
+    {
+      "reviewId": 3,
+      "courseId": 3,
+      "rating": 5,
+      "comment": "Perfect guide for performance testing with JMeter.",
+      "id": "8601"
+    },
+    {
+      "reviewId": 4,
+      "courseId": 4,
+      "rating": 4,
+      "comment": "API automation course is very practical, but the pace is a bit fast.",
+      "id": "1727"
+    },
+    {
+      "reviewId": 5,
+      "courseId": 5,
+      "rating": 5,
+      "comment": "Very insightful introduction to Docker for testers.",
+      "id": "1e79"
+    }
+  ],
+  "users": []
+}
